@@ -14,8 +14,8 @@ else{
 function oddOrEven(num){
     let num2 = Math.floor((Math.random() * 5) + 1);
     console.log(num2);
-    let oddOrEven = num + num2;
-    if(oddOrEven % 2 == 0){
+    let somma = num + num2;
+    if(somma % 2 == 0){
         return true;
     }
     else{

@@ -1,19 +1,19 @@
 let parolaScelta = prompt("inserisci una parola");
 
-function èPallindroma(parolaScelta){
-    let sinistraParola = 0;
-    let destraParola = parolaScelta.length - 1;
+function pallindroma(parolaScelta){
+    let indiceSinistro = 0;
+    let indiceDestro = parolaScelta.length - 1;
 
-    while(sinistraParola < destraParola){
-        if(parolaScelta[sinistraParola] !== parolaScelta[destraParola]){
+    while(indiceSinistro < indiceDestro){
+        if(parolaScelta[indiceSinistro] !== parolaScelta[indiceDestro]){
             console.log("parola non palidroma")
             return false;
         }
-        sinistraParola ++;
-        destraParola --;
+        indiceSinistro ++;
+        indiceDestro --;
     }
     console.log("parola è palindroma")
     return true
 }
 
-console.log(èPallindroma(parolaScelta))
+console.log(pallindroma(parolaScelta))
